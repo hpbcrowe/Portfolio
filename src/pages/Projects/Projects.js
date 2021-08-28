@@ -1,7 +1,7 @@
-import React from 'react';
-import Layout from '../../components/Layout';
-import { SectionTitle, Pill } from '../../styles';
-import { ProjectItem, ProjectTitle, SkillContainer } from './styles';
+import React from "react";
+import Layout from "../../components/Layout";
+import { SectionTitle, Pill } from "../../styles";
+import { ProjectItem, ProjectTitle, SkillContainer } from "./styles";
 
 const Projects = ({ user }) => {
   return (
@@ -13,10 +13,11 @@ const Projects = ({ user }) => {
             <ProjectItem key={i}>
               <ProjectTitle>{project.name}</ProjectTitle>
               <p>{project.summary}</p>
-              <p>{project.url}</p>
+
               <a href={project.url}>{project.url}</a>
-              <p>{project.githubUrl}</p>
+              <p>Project Repo</p>
               <a href={project.githubUrl}>{project.githubUrl}</a>
+              <img src={project.image[2]} alt="image"></img>
               <SkillContainer>
                 {[...project.languages, ...project.libraries].map((item, j) => (
                   <Pill key={j}>{item}</Pill>

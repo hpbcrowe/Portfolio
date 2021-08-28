@@ -17,7 +17,7 @@ const Projects = ({ user }) => {
               <a href={project.url}>{project.url}</a>
               <p>Project Repo</p>
               <a href={project.githubUrl}>{project.githubUrl}</a>
-              <img src={project.image[2]} alt="image"></img>
+              <img src={project.image[2]} ></img>
               <SkillContainer>
                 {[...project.languages, ...project.libraries].map((item, j) => (
                   <Pill key={j}>{item}</Pill>

@@ -18,12 +18,19 @@ const Projects = ({ user }) => {
               <p>Project Repo</p>
               <a href={project.githubUrl}>{project.githubUrl}</a>
               <p>{project.description}</p>
-              
+
               <SkillContainer>
                 {[...project.languages, ...project.libraries].map((item, j) => (
                   <Pill key={j}>{item}</Pill>
                 ))}
               </SkillContainer>
+             
+              {/* {project.images.map((resolution, k) => (
+                <ProjectItem key={k}>
+                  {" "}
+                  <img src={resolution.url}>{project.name}</img>
+                </ProjectItem>
+              ))} */}
             </ProjectItem>
           ))}
         </ul>

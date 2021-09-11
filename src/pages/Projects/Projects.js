@@ -13,6 +13,12 @@ const Projects = ({ user }) => {
             <ProjectItem key={i}>
               <ProjectTitle>{project.name}</ProjectTitle>
               <p>{project.summary}</p>
+              {project.images.map((image, k) => (
+                <ProjectItem key={k}>
+                  <img src={image.resolutions.thumbnail.url} />
+                </ProjectItem>
+              ))}
+
 
               <a href={project.url}>{project.url}</a>
               <p>Project Repo</p>
@@ -24,13 +30,7 @@ const Projects = ({ user }) => {
                   <Pill key={j}>{item}</Pill>
                 ))}
               </SkillContainer>
-             
-              {/* {project.images.map((resolution, k) => (
-                <ProjectItem key={k}>
-                  {" "}
-                  <img src={resolution.url}>{project.name}</img>
-                </ProjectItem>
-              ))} */}
+                
             </ProjectItem>
           ))}
         </ul>

@@ -1,0 +1,378 @@
+
+> portfolio@0.1.0 build
+> cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts --max_old_space_size=4096 build
+
+Creating an optimized production build...
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import '@carbon/themes/scss/themes';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\index.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+5 │ @import 'carbon-components/scss/globals/scss/styles.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\index.scss 5:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+8 │ @import './generated/tokens';
+  │         ^^^^^^^^^^^^^^^^^^^^
+  ╵
+    node_modules\@carbon\themes\scss\themes.scss 8:9  @import
+    src\index.scss 1:9                                root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+9 │ @import './generated/themes';
+  │         ^^^^^^^^^^^^^^^^^^^^
+  ╵
+    node_modules\@carbon\themes\scss\themes.scss 9:9  @import
+    src\index.scss 1:9                                root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+10 │ @import './mixins';
+   │         ^^^^^^^^^^
+   ╵
+    node_modules\@carbon\themes\scss\themes.scss 10:9  @import
+    src\index.scss 1:9                                 root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass(global-variable-exists("carbon--theme") and map-has-key($carbon--theme, "interactive-01")): map-get($carbon--theme, "interactive-01"); else: #0f62fe)
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+13 │   $interactive-01: if(
+   │ ┌──────────────────^
+14 │ │   global-variable-exists('carbon--theme') and
+15 │ │     map-has-key($carbon--theme, 'interactive-01'),
+16 │ │   map-get($carbon--theme, 'interactive-01'),
+17 │ │   #0f62fe
+18 │ │ ) !default;
+   │ └─^
+   ╵
+    node_modules\@carbon\themes\scss\generated\_tokens.scss 13:18  @import
+    node_modules\@carbon\themes\scss\themes.scss 8:9               @import
+    src\index.scss 1:9                                             root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass(global-variable-exists("carbon--theme") and map-has-key($carbon--theme, "interactive-02")): map-get($carbon--theme, "interactive-02"); else: #393939)
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+24 │   $interactive-02: if(
+   │ ┌──────────────────^
+25 │ │   global-variable-exists('carbon--theme') and
+26 │ │     map-has-key($carbon--theme, 'interactive-02'),
+27 │ │   map-get($carbon--theme, 'interactive-02'),
+28 │ │   #393939
+29 │ │ ) !default;
+   │ └─^
+   ╵
+    node_modules\@carbon\themes\scss\generated\_tokens.scss 24:18  @import
+    node_modules\@carbon\themes\scss\themes.scss 8:9               @import
+    src\index.scss 1:9                                             root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass(global-variable-exists("carbon--theme") and map-has-key($carbon--theme, "interactive-03")): map-get($carbon--theme, "interactive-03"); else: #0f62fe)
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+35 │   $interactive-03: if(
+   │ ┌──────────────────^
+36 │ │   global-variable-exists('carbon--theme') and
+37 │ │     map-has-key($carbon--theme, 'interactive-03'),
+38 │ │   map-get($carbon--theme, 'interactive-03'),
+39 │ │   #0f62fe
+40 │ │ ) !default;
+   │ └─^
+   ╵
+    node_modules\@carbon\themes\scss\generated\_tokens.scss 35:18  @import
+    node_modules\@carbon\themes\scss\themes.scss 8:9               @import
+    src\index.scss 1:9                                             root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass(global-variable-exists("carbon--theme") and map-has-key($carbon--theme, "interactive-04")): map-get($carbon--theme, "interactive-04"); else: #0f62fe)
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+46 │   $interactive-04: if(
+   │ ┌──────────────────^
+47 │ │   global-variable-exists('carbon--theme') and
+48 │ │     map-has-key($carbon--theme, 'interactive-04'),
+49 │ │   map-get($carbon--theme, 'interactive-04'),
+50 │ │   #0f62fe
+51 │ │ ) !default;
+   │ └─^
+   ╵
+    node_modules\@carbon\themes\scss\generated\_tokens.scss 46:18  @import
+    node_modules\@carbon\themes\scss\themes.scss 8:9               @import
+    src\index.scss 1:9                                             root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass(global-variable-exists("carbon--theme") and map-has-key($carbon--theme, "ui-background")): map-get($carbon--theme, "ui-background"); else: #ffffff)
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+57 │   $ui-background: if(
+   │ ┌─────────────────^
+58 │ │   global-variable-exists('carbon--theme') and
+59 │ │     map-has-key($carbon--theme, 'ui-background'),
+60 │ │   map-get($carbon--theme, 'ui-background'),
+61 │ │   #ffffff
+62 │ │ ) !default;
+   │ └─^
+   ╵
+    node_modules\@carbon\themes\scss\generated\_tokens.scss 57:17  @import
+    node_modules\@carbon\themes\scss\themes.scss 8:9               @import
+    src\index.scss 1:9                                             root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use meta.global-variable-exists instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+14 │   global-variable-exists('carbon--theme') and
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    node_modules\@carbon\themes\scss\generated\_tokens.scss 14:3  @import
+    node_modules\@carbon\themes\scss\themes.scss 8:9              @import
+    src\index.scss 1:9                                            root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use meta.global-variable-exists instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+25 │   global-variable-exists('carbon--theme') and
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    node_modules\@carbon\themes\scss\generated\_tokens.scss 25:3  @import
+    node_modules\@carbon\themes\scss\themes.scss 8:9              @import
+    src\index.scss 1:9                                            root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use meta.global-variable-exists instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+36 │   global-variable-exists('carbon--theme') and
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    node_modules\@carbon\themes\scss\generated\_tokens.scss 36:3  @import
+    node_modules\@carbon\themes\scss\themes.scss 8:9              @import
+    src\index.scss 1:9                                            root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use meta.global-variable-exists instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+47 │   global-variable-exists('carbon--theme') and
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    node_modules\@carbon\themes\scss\generated\_tokens.scss 47:3  @import
+    node_modules\@carbon\themes\scss\themes.scss 8:9              @import
+    src\index.scss 1:9                                            root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use meta.global-variable-exists instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+58 │   global-variable-exists('carbon--theme') and
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    node_modules\@carbon\themes\scss\generated\_tokens.scss 58:3  @import
+    node_modules\@carbon\themes\scss\themes.scss 8:9              @import
+    src\index.scss 1:9                                            root stylesheet
+
+DEPRECATION WARNING [color-functions]: lighten() is deprecated. Suggestions:
+
+color.scale($color, $lightness: 9.400921659%)
+color.adjust($color, $lightness: 8%)
+
+More info: https://sass-lang.com/d/color-functions
+
+    ╷
+398 │     $value: lighten($value, 8%);
+    │             ^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules\carbon-components\scss\globals\scss\_theme-tokens.scss 398:13  get-light-value()
+    node_modules\carbon-components\scss\globals\scss\_theme-tokens.scss 411:18  @import
+    node_modules\carbon-components\scss\globals\scss\_vars.scss 10:9            @import
+    node_modules\carbon-components\scss\globals\scss\styles.scss 72:9           @import
+    src\index.scss 5:9                                                          root stylesheet
+
+DEPRECATION WARNING [slash-div]: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($px, $carbon--base-font-size) or calc($px / $carbon--base-font-size)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+   ╷
+25 │   @return ($px / $carbon--base-font-size) * 1rem;
+   │            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\layout\_convert.scss 25:12     carbon--rem()
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\layout\_breakpoint.scss 16:23  @import
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\type\_styles.scss 8:9          @import
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\type\_reset.scss 10:9          @import
+    node_modules\carbon-components\scss\globals\scss\_css--reset.scss 9:9                                        @import
+    node_modules\carbon-components\scss\globals\scss\_helper-mixins.scss 23:9                                    @import
+    node_modules\carbon-components\scss\globals\scss\_theme.scss 8:9                                             @import
+    node_modules\carbon-components\scss\globals\scss\styles.scss 74:9                                            @import
+    src\index.scss 5:9                                                                                           root stylesheet
+
+DEPRECATION WARNING [slash-div]: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($step - 2, 4) or calc(($step - 2) / 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+   ╷
+20 │   @return carbon--get-type-size($step - 1) + (floor(($step - 2) / 4) + 1) * 2;
+   │                                                     ^^^^^^^^^^^^^^^
+   ╵
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\type\_scale.scss 20:53  carbon--get-type-size()
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\type\_scale.scss 31:17  @import
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\type\_styles.scss 10:9  @import
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\type\_reset.scss 10:9   @import
+    node_modules\carbon-components\scss\globals\scss\_css--reset.scss 9:9                                 @import
+    node_modules\carbon-components\scss\globals\scss\_helper-mixins.scss 23:9                             @import
+    node_modules\carbon-components\scss\globals\scss\_theme.scss 8:9                                      @import
+    node_modules\carbon-components\scss\globals\scss\styles.scss 74:9                                     @import
+    src\index.scss 5:9                                                                                    root stylesheet
+
+DEPRECATION WARNING [slash-div]: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($width - (2 * $margin), $columns) or calc(($width - (2 * $margin)) / $columns)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+   ╷
+27 │     @return ($width - (2 * $margin)) / $columns;
+   │             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\layout\_key-height.scss 27:13  carbon--get-column-width()
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\layout\_key-height.scss 38:5   @import
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\layout\layout.scss 12:9        @import
+    node_modules\carbon-components\scss\globals\scss\_layout.scss 9:9                                            @import
+    node_modules\carbon-components\scss\globals\scss\styles.scss 76:9                                            @import
+    src\index.scss 5:9                                                                                           root stylesheet
+
+DEPRECATION WARNING [slash-div]: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($carbon--grid-gutter, 2) or calc($carbon--grid-gutter / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+330 │         padding-right: #{($carbon--grid-gutter / 2) + $margin};
+    │                           ^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\grid\_mixins.scss 330:27           @content
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\layout\_breakpoint.scss 244:5      @content
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\layout\_breakpoint.scss 143:7      carbon--breakpoint-up()
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\layout\_breakpoint.scss 243:3      carbon--breakpoint()
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\grid\_mixins.scss 329:7            carbon--make-container()
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\grid\_mixins.scss 373:5            carbon--grid()
+    node_modules\carbon-components\scss\globals\grid\_grid.scss 43:5                                                 grid()
+    node_modules\carbon-components\scss\globals\grid\_grid.scss 48:3                                                 @content
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\import-once\import-once.scss 23:5  exports()
+    node_modules\carbon-components\scss\globals\grid\_grid.scss 47:1                                                 @import
+    node_modules\carbon-components\scss\globals\scss\styles.scss 85:9                                                @import
+    src\index.scss 5:9                                                                                               root stylesheet
+
+DEPRECATION WARNING [slash-div]: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($carbon--grid-gutter, 2) or calc($carbon--grid-gutter / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+331 │         padding-left: #{($carbon--grid-gutter / 2) + $margin};
+    │                          ^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\grid\_mixins.scss 331:26           @content
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\layout\_breakpoint.scss 244:5      @content
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\layout\_breakpoint.scss 143:7      carbon--breakpoint-up()
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\layout\_breakpoint.scss 243:3      carbon--breakpoint()
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\grid\_mixins.scss 329:7            carbon--make-container()
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\grid\_mixins.scss 373:5            carbon--grid()
+    node_modules\carbon-components\scss\globals\grid\_grid.scss 43:5                                                 grid()
+    node_modules\carbon-components\scss\globals\grid\_grid.scss 48:3                                                 @content
+    node_modules\carbon-components\scss\globals\scss\vendor\@carbon\elements\scss\import-once\import-once.scss 23:5  exports()
+    node_modules\carbon-components\scss\globals\grid\_grid.scss 47:1                                                 @import
+    node_modules\carbon-components\scss\globals\scss\styles.scss 85:9                                                @import
+    src\index.scss 5:9                                                                                               root stylesheet
+
+WARNING: 2427 repetitive deprecation warnings omitted.
+
+Compiled with warnings.
+
+src\pages\Projects\Projects.js
+  Line 18:19:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  581.48 KB  build\static\js\2.10c7cb72.chunk.js
+  48.94 KB   build\static\css\main.de0905dc.chunk.css
+  2.42 KB    build\static\js\main.2d687e32.chunk.js
+  1.61 KB    build\static\js\3.99de34d8.chunk.js
+  1.17 KB    build\static\js\runtime-main.c35bffa7.js
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+

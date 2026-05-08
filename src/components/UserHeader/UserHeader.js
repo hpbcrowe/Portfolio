@@ -19,7 +19,7 @@ const UserHeader = ({ user }) => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              @{user.basics.username}
+              @{user.basics.profiles[0].username}
             </a>
           </h4>
           <p>{user.basics.label}</p>
@@ -27,13 +27,14 @@ const UserHeader = ({ user }) => {
           <p>8 years of experience as a developer</p>
           <p>{user.basics.headline}</p>
           <p>
-            Blog:{" "}
+            {" "}
+            Blog:
             <a
-              href={user.basics.blog}
+              href={`https://crowequest-f5crfzfpg6hrd4f4.westus2-01.azurewebsites.net`}
               target="_blank"
               rel="noreferrer noopener"
             >
-              {user.basics.blog}
+              {user.projects[12].website}
             </a>
           </p>
         </div>

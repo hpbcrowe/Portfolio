@@ -39,7 +39,7 @@ export const ViewResumeLink = styled.a`
   margin-top: 1rem;
   border: 1px solid rgba(46, 204, 64, 0.6);
   background-color: rgba(46, 204, 64, 0.12);
-  color: #ffffff;
+  color: #161515;
   transition:
     background-color 250ms ease,
     border-color 250ms ease;
@@ -48,7 +48,7 @@ export const ViewResumeLink = styled.a`
     border-color: rgba(46, 204, 64, 0.9);
   }
   svg {
-    fill: white;
+    fill: black;
     margin-left: 8px;
   }
 `;

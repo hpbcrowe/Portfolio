@@ -1,32 +1,60 @@
-@import '@carbon/themes/scss/themes';
-$carbon--theme: $carbon--theme--g100;
-@include carbon--theme();
+@use '@carbon/themes/scss/themes' as carbonThemes;
+@use '@carbon/themes/scss/theme' as carbonTheme;
+
+carbonTheme.$theme: carbonThemes.$g100;
+
+:root {
+  @include carbonTheme.theme();
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  color: #161616;
+}
+
+body {
+  font-family: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+}
+
+a {
+  color: var(--cds-interactive-01);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
 
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
 a {
-  color: $text-04;
+  color: var(--cds-interactive-01);
 }
 
 .bx--side-nav__navigation {
-  background-color: $ui-background;
+  background-color: #f4f4f4;
 }
 
 a.bx--side-nav__link--current,
 a.bx--side-nav__link--current > span.bx--side-nav__link-text {
-  background-color: $ui-01;
-  color: $text-04;
+  background-color: #e0e0e0;
+  color: var(--cds-text-04);
 }
 
 .bx--side-nav__item:not(.bx--side-nav__item--active)
   > .bx--side-nav__link:hover {
-  background-color: $ui-01;
-  color: $text-04;
+  background-color: #e8e8e8;
+  color: var(--cds-text-04);
 }
 
 a.bx--side-nav__link > .bx--side-nav__link-text,
 .bx--side-nav__item:not(.bx--side-nav__item--active)
   > .bx--side-nav__link:hover
   > span {
-  color: $text-04;
+  color: var(--cds-text-04);
 }

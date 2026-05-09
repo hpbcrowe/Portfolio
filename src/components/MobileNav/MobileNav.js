@@ -1,7 +1,7 @@
-import React from 'react'
-import { User32, Code32, Portfolio32, Education32 } from '@carbon/icons-react'
+import React from "react";
+import { User, Code, Portfolio, Education } from "@carbon/icons-react";
 
-import { Container, Spacer, NavWrapper, NavButton, NavLink } from './styles'
+import { Container, Spacer, NavWrapper, NavButton, NavLink } from "./styles";
 
 const MobileNav = () => {
   return (
@@ -11,7 +11,7 @@ const MobileNav = () => {
         <NavLink to="/">
           <NavButton
             hasIconOnly
-            renderIcon={User32}
+            renderIcon={User}
             iconDescription="Me"
             tooltipPosition="bottom"
           />
@@ -19,7 +19,7 @@ const MobileNav = () => {
         <NavLink to="/projects">
           <NavButton
             hasIconOnly
-            renderIcon={Code32}
+            renderIcon={Code}
             iconDescription="Projects"
             tooltipPosition="bottom"
           />
@@ -27,7 +27,7 @@ const MobileNav = () => {
         <NavLink to="/work">
           <NavButton
             hasIconOnly
-            renderIcon={Portfolio32}
+            renderIcon={Portfolio}
             iconDescription="Work"
             tooltipPosition="bottom"
           />
@@ -35,14 +35,14 @@ const MobileNav = () => {
         <NavLink to="/education">
           <NavButton
             hasIconOnly
-            renderIcon={Education32}
+            renderIcon={Education}
             iconDescription="Education"
             tooltipPosition="bottom"
           />
         </NavLink>
       </NavWrapper>
     </Container>
-  )
-}
+  );
+};
 
-export default MobileNav
+export default MobileNav;

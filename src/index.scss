@@ -1,7 +1,16 @@
 @use '@carbon/themes/scss/themes' as carbonThemes;
 @use '@carbon/themes/scss/theme' as carbonTheme;
 
-carbonTheme.$theme: carbonThemes.$g100;
+
+// In your app.scss
+@use '@carbon/react/scss/themes';
+@use '@carbon/react/scss/theme' with (
+  $theme: themes.$g100
+);
+
+// Include this AFTER the theme configuration
+@use '@carbon/react';
+
 
 :root {
   @include carbonTheme.theme();

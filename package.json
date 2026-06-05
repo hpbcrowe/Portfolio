@@ -2,8 +2,8 @@
   "name": "portfolio",
   "version": "1.0.0",
   "engines": {
-    "node": "v18.14.0",
-    "npm": "11.1.0"
+    "node": "^20.17.0",
+    "npm": "^11.1.0"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "bugs": {

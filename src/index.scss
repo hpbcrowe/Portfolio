@@ -1,19 +1,14 @@
-@use '@carbon/themes/scss/themes' as carbonThemes;
-@use '@carbon/themes/scss/theme' as carbonTheme;
-
-
-// In your app.scss
+// Carbon React theme setup
 @use '@carbon/react/scss/themes';
 @use '@carbon/react/scss/theme' with (
-  $theme: themes.$g100
+  $theme: themes.$white
 );
 
 // Include this AFTER the theme configuration
 @use '@carbon/react';
 
-
 :root {
-  @include carbonTheme.theme();
+  // Carbon theme CSS custom properties are automatically set
 }
 
 html,
@@ -38,8 +33,6 @@ a:hover,
 a:focus {
   text-decoration: underline;
 }
-
-@import 'carbon-components/scss/globals/scss/styles.scss';
 
 a {
   color: var(--cds-interactive-01);

@@ -14,6 +14,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+> Note: this project includes a postinstall/prestart/prebuild hook that strips broken Carbon CSS source map references from `node_modules/carbon-components/css` so `npm start` does not emit missing SCSS source map warnings.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\

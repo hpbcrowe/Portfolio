@@ -29,16 +29,14 @@ const Projects = ({ user }) => {
                 typeof project.images === "object" &&
                 !Array.isArray(project.images) &&
                 Object.values(project.images).map((image, k) => (
-                  <ProjectItem key={k}>
+                  <div key={k}>
                     <img src={image.resolutions.thumbnail.url} />
-                  </ProjectItem>
+                  </div>
                 ))}
 
               <a href={project.url}>{project.url}</a>
               <p>Project Repo</p>
               <a href={project.githubUrl}>{project.githubUrl}</a>
-              <p>{project.description}</p>
-
               <SkillContainer>
                 {[
                   ...(project.languages || []),

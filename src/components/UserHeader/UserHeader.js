@@ -8,7 +8,7 @@ const UserHeader = ({ user }) => {
   const location = useLocation();
 
   return (
-    <HeaderContainer isHome={location.pathname === "/"}>
+    <HeaderContainer $isHome={location.pathname === "/"}>
       <Header>
         <Image src={user.basics.image} />
         <div>

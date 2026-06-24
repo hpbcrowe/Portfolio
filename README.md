@@ -14,6 +14,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+> Note: this project requires Node.js `20.17.0` or newer and npm `11.x`. Heroku will use the `engines` field in `package.json` to select the right runtime, and if you use `nvm` locally you can run `nvm use` in the repo root.
+>
+> This project also includes a postinstall/prestart/prebuild hook that strips broken Carbon CSS source map references from `node_modules/carbon-components/css` so `npm start` does not emit missing SCSS source map warnings.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\

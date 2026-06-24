@@ -10,7 +10,7 @@ export const HeaderContainer = styled.div`
   margin-bottom: 2rem;
   color: #161616;
   @media (max-width: 640px) {
-    display: ${({ isHome }) => (!isHome ? "none" : "flex")};
+    display: ${({ $isHome }) => (!$isHome ? "none" : "flex")};
     flex-direction: column;
   }
 `;

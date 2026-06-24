@@ -1,10 +1,10 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import Button from 'carbon-components-react/lib/components/Button';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { Button } from "@carbon/react";
 
 export const Container = styled.div`
   display: none;
-  
+
   @media (max-width: 640px) {
     display: block;
   }
@@ -16,7 +16,7 @@ export const Spacer = styled.div`
 
 export const NavWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   position: fixed;
   width: 100vw;
   top: 0;
@@ -26,9 +26,10 @@ export const NavWrapper = styled.div`
 
 export const NavLink = styled(Link)`
   width: 25%;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 export const NavButton = styled(Button)`
-  width: 100%;
-  justify-content: center;
+  width: 25%;
 `;
